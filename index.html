@@ -1,7 +1,17 @@
-<!DOCTYPE html>
+﻿﻿<!DOCTYPE html>
 <html lang="en" prefix="og: http://ogp.me/ns#">
   <head>
-    <base href="" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-169245929-7"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-169245929-7');
+    </script>
+
+    <base href="https://alohe.github.io/emojicloud/" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -42,7 +52,7 @@
       property="og:description"
       content="Add fully vector emoji's to your projects. A standard open-source set that fits in your projects."
     />
-    <link rel="shortcut icon" href="assets/img/256.png" />
+    <link rel="shortcut icon" href="assets/img/256.png"  type="image/x-icon"/>
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -92,7 +102,7 @@
       <div class="filter row mb-4">
         <div class="col-lg-12 text-center mt-5 main-header">
           <h2>
-            <img src="svg/fire.svg" alt="" />
+            <img src="svg/Fire.svg" alt="" />
             Emoji
             <img src="svg/Weather.svg" alt="" />
             cloud
@@ -110,8 +120,13 @@
       <hr />
       <div id="list" class="cards mt-5"></div>
     </div>
-
+    <!-- copied toast -->
     <button id="showcopied" hidden>Copied to clipboard!</button>
+
+    <!-- github star button -->
+    <div style="position: fixed; top: 20px; right: 20px;">
+      <a class="github-button" href="https://github.com/alohe/emojicloud" data-show-count="true" aria-label="Star alohe/emojicloud on GitHub">Star</a>
+    </div>
 
     <!-- footer-->
     <footer class="container text-center">
@@ -131,8 +146,8 @@
         </a>
         <br />
         <a href="https://sensa.co/emoji/?ref=alemalohe" target="_blank"
-          ><button class="download-btn">Download the full SVG pack</button></a
-        >
+          ><button class="download-btn">Download the full SVG pack</button>
+        </a>
       </p>
     </footer>
     <!-- JavaScript Bundle with Popper -->
@@ -142,5 +157,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="assets/js/main.min.js"></script>
+    <!-- github star button. -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
   </body>
 </html>
