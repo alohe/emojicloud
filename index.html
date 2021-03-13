@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+﻿﻿<!DOCTYPE html>
 <html lang="en" prefix="og: http://ogp.me/ns#">
   <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -52,7 +52,7 @@
       property="og:description"
       content="Add fully vector emoji's to your projects. A standard open-source set that fits in your projects."
     />
-    <link rel="shortcut icon" href="/assets/img/256.png" />
+    <link rel="shortcut icon" href="assets/img/256.png" />
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -120,8 +120,13 @@
       <hr />
       <div id="list" class="cards mt-5"></div>
     </div>
-
+    <!-- copied toast -->
     <button id="showcopied" hidden>Copied to clipboard!</button>
+
+    <!-- github star button -->
+    <div style="position: fixed; top: 20px; right: 20px;">
+      <a class="github-button" href="https://github.com/alohe/emojicloud" data-show-count="true" aria-label="Star alohe/emojicloud on GitHub">Star</a>
+    </div>
 
     <!-- footer-->
     <footer class="container text-center">
@@ -141,8 +146,8 @@
         </a>
         <br />
         <a href="https://sensa.co/emoji/?ref=alemalohe" target="_blank"
-          ><button class="download-btn">Download the full SVG pack</button></a
-        >
+          ><button class="download-btn">Download the full SVG pack</button>
+        </a>
       </p>
     </footer>
     <!-- JavaScript Bundle with Popper -->
@@ -152,5 +157,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="assets/js/main.min.js"></script>
+    <!-- github star button. -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
   </body>
 </html>
