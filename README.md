@@ -1,15 +1,12 @@
-# Emojicloud
+# Emoji cloud
 [![Emojicloud demo](demo/demo.gif)](https://youtu.be/AcEZ_bgRhpI)
 
-Emoji cloud is a super lightweight CDN for SVG emojis. It's the easiest way to add vector scalable emojis to your projects.
-
-Made by [Alohe](https://twitter.com/alemalohe)
+Emoji cloud is a super lightweight CDN for vector emojis. It's the easiest way to add scalable emojis to your projects.
 
 ## Table of contents
 
 - [Features](#features)
 - [Installation](#installation)
-
 
 ## Features
 
@@ -27,6 +24,10 @@ Made by [Alohe](https://twitter.com/alemalohe)
 ```html
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/alohe/emojicloud/emojicloud.css" />
 ```
-2. That's it, you can now start using SVG emojis on your webpage
+2. That's it, you can now start using SVG emojis on your Web page
 
 <img src="demo/demo horizontal.gif" width="auto" />
+
+#
+
+Feel free to reach out to me [on Twitter](https://twitter.com/alemalohe) if you have any questions or feedback! 
