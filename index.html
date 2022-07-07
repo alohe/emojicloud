@@ -1,162 +1,401 @@
-﻿﻿<!DOCTYPE html>
-<html lang="en" prefix="og: http://ogp.me/ns#">
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-169245929-7"></script>
+   <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5P39DWJTMT"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
 
-      gtag('config', 'UA-169245929-7');
+      gtag('config', 'G-5P39DWJTMT');
     </script>
-    <base href="https://alohe.github.io/emojicloud/" />
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="application-name" content="emojicloud" />
-    <meta name="apple-mobile-web-app-title" content="emojicloud" />
-    <meta name="theme-color" content="#ffffff" />
-    <meta name="msapplication-navbutton-color" content="#ffffff" />
-    <meta
-      name="apple-mobile-web-app-status-bar-style"
-      content="black-translucent"
-    />
-    <meta name="msapplication-starturl" content="/" />
-    <link rel="manifest" href="manifest.json" />
+    
+    <meta name ="title" content ="Emoji cloud"/>
+    <meta name ="description" content ="Emoji cloud is a vector emoji library and toolkit, designed to make your life easier. "/>
+    <meta name ="copyright" content ="Alohe"/>
 
-    <!-- SEO -->
-    <meta name="twitter:title" content="Emoji Cloud · A cdn for svg emoji's" />
-    <meta property="og:type" content="website" />
-    <meta
-      name="description"
-      content="Add fully vector emoji's to your projects. A standard open-source set that fits in your projects."
-    />
-    <meta name="twitter:site" content="@alemlaohe" />
-    <meta
-      name="twitter:description"
-      content="Add fully vector emoji's to your projects. A standard open-source set that fits in your projects."
-    />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta
-      name="twitter:image"
-      content="https://alohe.github.io/emojicloud/assets/img/twitter-01.jpg"
-    />
-    <meta property="og:title" content="Emoji Cloud · A cdn for svg emoji's " />
-    <meta property="og:image" content="" />
-    <title>Emoji Cloud · A cdn for svg emoji's</title>
-    <meta
-      property="og:description"
-      content="Add fully vector emoji's to your projects. A standard open-source set that fits in your projects."
-    />
-    <link rel="shortcut icon" href="png/Unicorn.png"  type="image/x-icon"/>
+    <meta property ="og:type" content ="website"/>
+    <meta property ="og:url" content ="https://alohe.github.io/emojicloud"/>
+    <meta property ="og:title" content ="Emoji cloud"/>
+    <meta property ="og:description" content ="Emoji cloud is a vector emoji library and toolkit, designed to make your life easier. "/>
+    <meta property ="og:image" content ="https://alohe.github.io/emojicloud/assets/img/social.jpg"/>
+    <meta property ="twitter:card" content ="summary_large_image"/>
+    <meta property ="twitter:url" content ="https://alohe.github.io/emojicloud"/>
+    <meta property ="twitter:title" content ="Emoji cloud"/>
+    <meta property ="twitter:description" content ="Emoji cloud is a vector emoji library and toolkit, designed to make your life easier. "/>
+    <meta property ="twitter:image" content ="https://alohe.github.io/emojicloud/assets/img/social.jpg"/>
+
+    <link rel="icon" type="image/x-icon" href="assets/img/192.png">
+
+    <title>Emoji cloud</title>
+
     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css"
       rel="stylesheet"
     />
+    <!-- Emoji cloud CDN -->
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700,800,900"
+      href="https://cdn.jsdelivr.net/gh/alohe/emojicloud/emojicloud.css"
     />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Chewy:300,400,500,600,700,750,800,900"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Lato:300,400,500,600,700,750,800,900"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700,750,800,900"
-    />
-    <link rel="stylesheet" href="assets/css/style.min.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script>
-      $(document).ready(function () {
-        $("#search").on("keyup", function () {
-          var value = $(this).val().toLowerCase();
-          $("#list .emoji-card").filter(function () {
-            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
-          });
-        });
-      });
-    </script>
+    <link rel="stylesheet" href="assets/css/main.css" />
   </head>
   <body>
     <!-- body -->
-    <div class="container pl-3 pr-3">
-      <div class="filter row mb-4">
-        <div class="col-lg-12 text-center mt-5 main-header">
+    <main class="container-fluid">
+      <div class="hero">
+        <nav aria-label="breadcrumb" class="nav justify-content-center mb-3">
+          <li class="breadcrumb-item active">Home</li>
+          <li class="breadcrumb-item">
+            <a href="cheatsheet.html">Cheatsheet</a>
+          </li>
+          <li class="breadcrumb-item">
+            <a href="quickstart.html">Quick Start</a>
+          </li>
+          <li class="breadcrumb-item">
+            <a
+              href="https://codepen.io/alohe/pen/jOzWdbY"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fab fa-codepen"></i>
+            </a>
+          </li>
+        </nav>
+        <div class="text-center">
           <h2>
-            <img src="svg/Fire.svg" alt="" />
+            <i class="emoji-fire"></i>
             Emoji
-            <img src="svg/Weather.svg" alt="" />
+            <i class="emoji-weather"></i>
             cloud
-            <img src="svg/High voltage.svg" alt="" />
+            <i class="emoji-high-voltage"></i>
           </h2>
-          <p>
-            A <font class="text-dark">CDN</font> for
-            <font class="text-dark">SVG emoji's</font>
-          </p>
-        </div>
-        <div class="col-lg-6 inner ml-auto mr-auto">
-          <input type="text" placeholder="🔍 Search Emoji's" id="search" />
+          <h3 class="mb-5">
+            A gateway to vector emojis 
+          </h3>
+          <p hidden>Add context to your project with fully vector emoji's</p>
+
+          <div class="code-container col col-lg-6 col-md-8 mx-auto">
+            <i class="emoji-fire" id="typedIcon"></i>
+            <code>
+              <pre><code>&lt;i&nbsp;class="<font class="typed-element"></font>"&gt;<span>&lt;/i&gt;</span></code></pre>
+            </code>
+          </div>
+
+          <div class="col-lg-6 mx-auto">
+            <p class="mt-5">
+              Your emoji game is about to get a lot more serious. with emoji cloud, you can add vector emojis to your projects with zero configuration and a single line of code
+            </p>
+            <a href="#getStarted">
+              <button class="started-btn">Get Started</button>
+            </a>
+          </div>
         </div>
       </div>
-      <hr />
-      <div id="list" class="cards mt-5"></div>
-    </div>
-    <!-- copied toast -->
-    <button id="showcopied" hidden>Copied to clipboard!</button>
 
-    <!-- github star button -->
-    <div style="position: fixed; top: 20px; right: 20px;">
-      <a class="github-button" href="https://github.com/alohe/emojicloud" data-show-count="true" aria-label="Star alohe/emojicloud on GitHub">Star</a>
-    </div>
+      <div class="section container" id="getStarted">
+        <div class="col-lg-5">
+          <h1 class="title">Get Started</h1>
+          <p>
+            It's easy to get started with. Just add the emojicloud to your
+            project, and you're good to go!
+          </p>
+          <h4 class="min-title">Include via CDN</h4>
+          <p>
+            See it in action with a simple
+            <a href="quickstart.html"><u>quick start guide</u></a
+            >.
+            <br />
+            Or you can just add the following code to your project and start
+            using it
+          </p>
+          <div class="code-copy">
+            <!-- copyable link css code copy on click -->
+            <button
+              class="copy-btn"
+              onclick="copyToClipboard(this)"
+              id="copyBtn"
+            >
+              <i class="fa fa-copy"></i>
+            </button>
+            <input type="text" value="" id="copyableCode" readonly="readonly" />
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <div class="video-container" id="demoContainer">
+            <iframe
+              src="https://www.youtube.com/embed/AcEZ_bgRhpI?rel=0&showinfo=0&controls=1&vq=hd720"
+              title="Emoji cloud 2.0"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+              autoplay="true"
+              id="demoVideo"
+            ></iframe>
+          </div>
+        </div>
+      </div>
 
-    <!-- footer-->
-    <footer class="container text-center">
-      <p>
-        Made with
-        <img src="svg/Heart.svg" width="20px" alt="heart emoji" />
-        by
-        <a href="http://alohe.github.io" target="_blank" rel="noopener noreferrer">Alohe</a>
-        <br />
-        All credits of the SVG's go to
-        <a
-          href="https://sensa.co/emoji/?ref=alemalohe"
-          target="_blank"
-          class="text-dark"
-        >
-          sensa.co
-        </a>
-        <br />
-        <a href="https://sensa.co/emoji/?ref=alemalohe" target="_blank"
-          ><button class="download-btn">Download the full SVG pack</button>
-        </a>
-      </p>
-    </footer>
-    <!-- JavaScript Bundle with Popper -->
+      <div class="section" id="fullVector">
+        <div class="text-center">
+          <h1 class="title">Vector</h1>
+          <p>All emojis are infinitely scalable</p>
+          <div class="row">
+            <h1 class="col"><i class="i emoji-face-savoring-food"></i></h1>
+            <h2 class="col">
+              <i class="i emoji-face-with-steam-from-nose"></i>
+            </h2>
+            <h3 class="col"><i class="i emoji-face-with-tears-of-joy"></i></h3>
+            <h4 class="col"><i class="i emoji-face-blowing-a-kiss"></i></h4>
+            <h5 class="col"><i class="i emoji-grinning-squinting-face"></i></h5>
+            <h6 class="col"><i class="i emoji-shushing-face"></i></h6>
+          </div>
+        </div>
+      </div>
+
+      <div class="section col-lg-9 mx-auto" id="blazingFast">
+        <div class="col-lg-6">
+          <h1 class="title">Blazing Fast</h1>
+          <p>
+            Emoji cloud uses
+            <a href="https://www.jsdelivr.com/"><u>jsdelivr</u></a> to deliver
+            emojis to your users from servers closest to them.
+          </p>
+        </div>
+
+        <div class="col-lg-6 text-center">
+          <h1 class="buzz">
+            <i class="i emoji-rocket super-large rocket"></i>
+          </h1>
+        </div>
+      </div>
+
+      <div class="section" id="Fits">
+        <div class="text-center">
+          <h1 class="title">Fits everywhere</h1>
+          <p>Integrable to any design</p>
+
+          <div class="fits-everywhere">
+            <button>
+              <i class="emoji-palm"></i>
+            </button>
+            <button>
+              <i class="emoji-crystal-ball"></i>
+            </button>
+            <button>
+              <i class="emoji-unicorn"></i>
+            </button>
+            <button>
+              <i class="emoji-check-mark"></i>
+            </button>
+            <button>
+              <i class="emoji-mailbox"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="section col-lg-9 mx-auto">
+        <div class="d-grid">
+          <h1 class="title">Built for Developers</h1>
+          <p>
+            In a few lines of code, you can have vector emojis ready for your
+            project. You can embed them into your site, making them ready for
+            different projects of any scale.
+          </p>
+        </div>
+
+        <div class="col-lg-6 text-center">
+          <img src="demo.gif" class="img-fluid" alt="" />
+        </div>
+      </div>
+
+      <!-- footer-->
+      <footer class="container">
+        <div class="d-flex justify-content-center">
+          <p>Designed & Built by</p>
+          <a
+            href="http://alohe.github.io"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="made-by"
+          >
+            <img
+              src="https://avatars.githubusercontent.com/u/50866431?s=400&u=81f17b8f0fe2b587d32fe8945531b5806470a535&v=4"
+              alt="Alohe"
+            />
+            <font class="text-dark line-height-0">Alohe</font></a
+          >
+        </div>
+      </footer>
+    </main>
+
+    <!-- JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
     <script
-      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      src="https://cdnjs.cloudflare.com/ajax/libs/TypewriterJS/2.19.0/core.min.js"
+      integrity="sha512-t4NGjfaRaGCjmiTGBsiG3w8FCp8ZY7dPlwZAXfeoGPARUT/rt3OP0NpQkblSgZy/2R8vPTXiEcq/zcWIJ8NusQ=="
       crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     ></script>
-    <script src="assets/js/main.min.js"></script>
-    <!-- github star button. -->
-    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <script>
+      var typedElement = document.querySelector(".typed-element");
+      let typedIcon = document.querySelector("#typedIcon");
+
+      var typewriter = new Typewriter(typedElement, {
+        loop: true,
+        delay: 75,
+      });
+
+
+      typewriter
+        .typeString("emoji-fire")
+        .callFunction(() => {
+          typedIcon.classList.remove("emoji-bell");
+          typedIcon.classList.add("emoji-fire");
+        })
+        .pauseFor(300)
+        .deleteChars(4)
+        .typeString("weather")
+        .callFunction(() => {
+          typedIcon.classList.remove("emoji-fire");
+          typedIcon.classList.add("emoji-weather");
+        })
+        .pauseFor(1000)
+        .deleteChars(7)
+        .typeString("high-voltage")
+        .callFunction(() => {
+          typedIcon.classList.remove("emoji-weather");
+          typedIcon.classList.add("emoji-high-voltage");
+        })
+        .pauseFor(1000)
+        .deleteChars(12)
+        .typeString("rocket")
+        .callFunction(() => {
+          typedIcon.classList.remove("emoji-high-voltage");
+          typedIcon.classList.add("emoji-rocket");
+        })
+        .pauseFor(1000)
+        .deleteChars(6)
+        .typeString("crystal-ball")
+        .callFunction(() => {
+          typedIcon.classList.remove("emoji-rocket");
+          typedIcon.classList.add("emoji-crystal-ball");
+        })
+        .pauseFor(1000)
+        .deleteChars(12)
+        .typeString("bell")
+        .callFunction(() => {
+          typedIcon.classList.remove("emoji-crystal-ball");
+          typedIcon.classList.add("emoji-bell");
+        })
+        .pauseFor(1000)
+        .start();
+
+      let finalCopy = document.querySelector("#copyableCode");
+      finalCopy.value = `<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/alohe/emojicloud/emojicloud.css" />`;
+
+      function copyToClipboard(e) {
+        let copyBtn = document.querySelector("#copyBtn");
+        finalCopy.select();
+        finalCopy.setSelectionRange(0, 99999);
+        document.execCommand("copy");
+        copyBtn.innerHTML = `<i class="emoji-check-mark"></i>`;
+        copyBtn.classList.add("active");
+        setTimeout(() => {
+          copyBtn.innerHTML = `<i class="fa fa-copy"></i>`;
+          copyBtn.classList.remove("active");
+        }, 3000);
+      }
+
+      /* run GSAP  */
+      let width = window.innerWidth > 0 ? window.innerWidth : screen.width;
+      if (width > 768) {
+        /* presets */
+        document.querySelector("#getStarted").style.opacity = 0;
+
+        /* scroll triggers */
+        ScrollTrigger.create({
+          trigger: "#getStarted",
+          start: "top 50%+=100px",
+          endTrigger: "#getStarted",
+          end: "bottom 50%+=100px",
+          onUpdate: (self) => {
+            document.querySelector("#getStarted").style.opacity =
+              self.progress.toFixed(3) * 2;
+          },
+        });
+
+        ScrollTrigger.create({
+          trigger: "#fullVector",
+          start: "top 50%+=100px",
+          endTrigger: "#fullVector",
+          end: "bottom 50%+=100px",
+          onUpdate: (self) => {
+            let element = document.querySelector("#fullVector");
+
+            element.style.opacity = self.progress.toFixed(3) * 2;
+
+            gsap.to(element, {
+              duration: 1,
+              scale: self.progress.toFixed(3) * 2,
+              ease: "power3.out",
+            });
+          },
+        });
+
+        ScrollTrigger.create({
+          trigger: "#blazingFast",
+          start: "top 50%+=100px",
+          endTrigger: "#blazingFast",
+          end: "bottom 50%+=100px",
+          onUpdate: (self) => {
+            let element = document.querySelector("#blazingFast");
+
+            element.style.opacity = self.progress.toFixed(3) * 2;
+
+            gsap.to(".rocket", {
+              duration: 1,
+              scale: self.progress.toFixed(3) * 5,
+              rotate: self.progress.toFixed(3) * 40,
+              x: self.progress.toFixed(3) * 600,
+              y: self.progress.toFixed(3) * -100,
+              ease: "power3.out",
+            });
+          },
+        });
+
+        ScrollTrigger.create({
+          trigger: "#Fits",
+          start: "top 50%+=100px",
+          endTrigger: "#Fits",
+          end: "bottom 50%+=100px",
+          onUpdate: (self) => {
+            let element = document.querySelector("#Fits");
+
+            element.style.opacity = self.progress.toFixed(3) * 2;
+
+            gsap.to(".fits-everywhere", {
+              duration: 1,
+              scale: self.progress.toFixed(3) * 2,
+              y: self.progress.toFixed(3) * 100,
+              ease: "power3.out",
+            });
+          },
+        });
+      }
+    </script>
   </body>
 </html>

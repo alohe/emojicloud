@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+  <head>
+   <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5P39DWJTMT"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-5P39DWJTMT');
+    </script>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Quickstart</title>
+
+    <meta name ="title" content ="Emoji cloud"/>
+    <meta name ="description" content ="Emoji cloud is a vector emoji library and toolkit, designed to make your life easier. "/>
+    <meta name ="copyright" content ="Alohe"/>
+
+    <meta property ="og:type" content ="website"/>
+    <meta property ="og:url" content ="https://alohe.github.io/emojicloud"/>
+    <meta property ="og:title" content ="Emoji cloud"/>
+    <meta property ="og:description" content ="Emoji cloud is a vector emoji library and toolkit, designed to make your life easier. "/>
+    <meta property ="og:image" content ="https://alohe.github.io/emojicloud/assets/img/social.jpg"/>
+    <meta property ="twitter:card" content ="summary_large_image"/>
+    <meta property ="twitter:url" content ="https://alohe.github.io/emojicloud"/>
+    <meta property ="twitter:title" content ="Emoji cloud"/>
+    <meta property ="twitter:description" content ="Emoji cloud is a vector emoji library and toolkit, designed to make your life easier. "/>
+    <meta property ="twitter:image" content ="https://alohe.github.io/emojicloud/assets/img/social.jpg"/>
+
+    <link rel="icon" type="image/x-icon" href="assets/img/192.png">
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css"
+      rel="stylesheet"
+    />
+    <!-- Emoji cloud CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/alohe/emojicloud/emojicloud.css"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+  </head>
+  <body>
+    <!-- body -->
+    <main class="container">
+      <div class="cheet-head m-0">
+          <nav aria-label="breadcrumb" class="nav justify-content-left mt-5">
+          <li class="breadcrumb-item">
+            <a href="index.html">Home</a>
+          </li>
+          <li class="breadcrumb-item active">Quickstart</li>
+          <li class="breadcrumb-item">
+            <a href="cheatsheet.html">Cheatsheet</a>
+          </li>
+          <li class="breadcrumb-item">
+            <a
+              href="https://codepen.io/alohe/pen/jOzWdbY"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fab fa-codepen"></i>
+            </a>
+          </li>
+        </nav>
+          <h1 class="title mt-2">
+            <i class="emoji-rocket"></i> Quick start <i class="emoji-sparkles"></i>
+          </h1>
+          <p>
+            Get started by including emojicloud's production-ready CSS via CDN. See it in practice with this
+            <a href="https://codepen.io/alohe/pen/jOzWdbY" target="_blank" rel="noopener noreferrer"
+              ><u>CodePen demo</u>.</a
+            >
+          </p>
+
+        <h1 class="quick-start-title mt-5">1. Create a new <font class="highlight">index.html</font> file in your project root.</h1>
+         <div class="copyable">
+            <p class="language-html">
+                &lt;!doctype html&gt;<br>
+                &lt;html lang="en"&gt;<br>
+                &lt;head&gt;
+                    <div class="ms-4 mb-3 mt-2">
+                    &lt;meta charset="utf-8"&gt;<br>
+                    &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;<br>
+                    &lt;title&gt;Emojicloud - demo&lt;/title&gt;
+                    </div>
+                &lt;/head&gt;<br>
+                &lt;body&gt;<br>
+                   <br>
+                &lt;/body&gt;<br>
+                &lt;/html&gt;
+            </p>
+         </div>
+        
+        
+        
+        <h1 class="quick-start-title mt-5">2. Include emojicloud's CSS via CDN and add your first emoji</h1>
+        <p>
+          Place the <font class="highlight">&lt;link&gt;</font> tag in the <font class="highlight">&lt;head&gt;</font> of your index.html file.
+    you can find a full <a href="cheatsheet.html"><u>list of emojis here</u></a></p>
+        <div class="copyable">
+            <p class="language-html">
+                &lt;!doctype html&gt;<br>
+                &lt;html lang="en"&gt;<br>
+                &lt;head&gt;
+                    <ul>
+                    &lt;meta charset="utf-8"&gt;<br>
+                    &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;<br>
+                    &lt;title&gt;Emojicloud - demo&lt;/title&gt;<br>
+                    <font class="highlight">&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/alohe/emojicloud/emojicloud.css"&gt;</font>
+                    </ul>
+                &lt;/head&gt;<br>
+                &lt;body&gt;<br>
+                     <div class="ms-4 mt-2 mb-2 highlight">
+                        &lt;h1&gt;<br>
+                        <font class="ms-4 ">&lt;i class="emoji-waving-hand"&gt;&lt;/i&gt; Hi, Mom!</font><br>
+                        &lt;/h1&gt;
+                    </div>
+                &lt;/body&gt;<br>
+                &lt;/html&gt;
+            </p>
+         </div>
+
+
+
+        <h1 class="quick-start-title mt-5">3. Hi, Mom!</h1>
+        <p class="pb-4">
+           Open the page in your browser of choice and see your first emoji!
+        </p>
+
+        <hr />
+
+        <h1 class="quick-start-title">CDN link</h1>
+        <p>As a reference, here is the primary CDN link.</p>
+        <p class="highlight code-highlight rounded bg-light p-3">
+          https://cdn.jsdelivr.net/gh/alohe/emojicloud/emojicloud.css  
+        </p>
+
+
+        <!-- footer-->
+        <footer>
+          <div class="d-flex justify-content-center pt-5">
+            <p>Feel free to reach out on</p>
+            <a
+              href="https://twitter.com/alemalohe"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="made-by ms-2 me-2"
+            >
+              <u>Twitter</u></a
+            >
+            <p> if you have any questions or feedback!</p>
+          </div>
+        </footer>
+    </main>
+
+  </body>
+</html>
