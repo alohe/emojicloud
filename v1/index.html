@@ -1,0 +1,161 @@
+﻿﻿<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-169245929-7"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-169245929-7');
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="application-name" content="emojicloud" />
+    <meta name="apple-mobile-web-app-title" content="emojicloud" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="msapplication-navbutton-color" content="#ffffff" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <meta name="msapplication-starturl" content="/" />
+    <link rel="manifest" href="manifest.json" />
+
+    <!-- SEO -->
+    <meta name="twitter:title" content="Emoji Cloud · A cdn for svg emoji's" />
+    <meta property="og:type" content="website" />
+    <meta
+      name="description"
+      content="Add fully vector emoji's to your projects. A standard open-source set that fits in your projects."
+    />
+    <meta name="twitter:site" content="@alemlaohe" />
+    <meta
+      name="twitter:description"
+      content="Add fully vector emoji's to your projects. A standard open-source set that fits in your projects."
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:image"
+      content="https://alohe.github.io/emojicloud/assets/img/twitter-01.jpg"
+    />
+    <meta property="og:title" content="Emoji Cloud · A cdn for svg emoji's " />
+    <meta property="og:image" content="" />
+    <title>Emoji Cloud · A cdn for svg emoji's</title>
+    <meta
+      property="og:description"
+      content="Add fully vector emoji's to your projects. A standard open-source set that fits in your projects."
+    />
+    <link rel="shortcut icon" href="png/Unicorn.png"  type="image/x-icon"/>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700,800,900"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Chewy:300,400,500,600,700,750,800,900"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Lato:300,400,500,600,700,750,800,900"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700,750,800,900"
+    />
+    <link rel="stylesheet" href="assets/css/style.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#search").on("keyup", function () {
+          var value = $(this).val().toLowerCase();
+          $("#list .emoji-card").filter(function () {
+            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
+          });
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <!-- body -->
+    <div class="container pl-3 pr-3">
+      <div class="filter row mb-4">
+        <div class="col-lg-12 text-center mt-5 main-header">
+          <h2>
+            <img src="svg/Fire.svg" alt="" />
+            Emoji
+            <img src="svg/Weather.svg" alt="" />
+            cloud
+            <img src="svg/High voltage.svg" alt="" />
+          </h2>
+          <p>
+            A <font class="text-dark">CDN</font> for
+            <font class="text-dark">SVG emoji's</font>
+          </p>
+        </div>
+        <div class="col-lg-6 inner ml-auto mr-auto">
+          <input type="text" placeholder="🔍 Search Emoji's" id="search" />
+        </div>
+      </div>
+      <hr />
+      <div id="list" class="cards mt-5"></div>
+    </div>
+    <!-- copied toast -->
+    <button id="showcopied" hidden>Copied to clipboard!</button>
+
+    <!-- github star button -->
+    <div style="position: fixed; top: 20px; right: 20px;">
+      <a class="github-button" href="https://github.com/alohe/emojicloud" data-show-count="true" aria-label="Star alohe/emojicloud on GitHub">Star</a>
+    </div>
+
+    <!-- footer-->
+    <footer class="container text-center">
+      <p>
+        Made with
+        <img src="svg/Heart.svg" width="20px" alt="heart emoji" />
+        by
+        <a href="http://alohe.github.io" target="_blank" rel="noopener noreferrer">Alohe</a>
+        <br />
+        All credits of the SVG's go to
+        <a
+          href="https://sensa.co/emoji/?ref=alemalohe"
+          target="_blank"
+          class="text-dark"
+        >
+          sensa.co
+        </a>
+        <br />
+        <a href="https://sensa.co/emoji/?ref=alemalohe" target="_blank"
+          ><button class="download-btn">Download the full SVG pack</button>
+        </a>
+      </p>
+    </footer>
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/js/main.min.js"></script>
+    <!-- github star button. -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+  </body>
+</html>
