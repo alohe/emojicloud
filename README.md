@@ -20,7 +20,7 @@ Emoji cloud is a super lightweight CDN for vector emojis. It's the easiest way t
 
 ## Installation
 ### 🌐 Include via CDN
-1. Add the follwing code right before the closing ```</head>``` tag
+1. Add the following code right before the closing ```</head>``` tag
 ```html
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/alohe/emojicloud/emojicloud.css" />
 ```
