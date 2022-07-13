@@ -1,24 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name ="title" content ="Emoji cloud"/>
-    <meta name ="description" content ="Emoji cloud is a vector emoji library and toolkit, designed to make your life easier. "/>
-    <meta name ="copyright" content ="Alohe"/>
-    <meta property ="og:type" content ="website"/>
-    <meta property ="og:url" content ="https://alohe.github.io/emojicloud"/>
-    <meta property ="og:title" content ="Emoji cloud"/>
-    <meta property ="og:description" content ="Emoji cloud is a vector emoji library and toolkit, designed to make your life easier. "/>
-    <meta property ="og:image" content ="https://alohe.github.io/emojicloud/assets/img/social.jpg"/>
-    <meta property ="twitter:card" content ="summary_large_image"/>
-    <meta property ="twitter:url" content ="https://alohe.github.io/emojicloud"/>
-    <meta property ="twitter:title" content ="Emoji cloud"/>
-    <meta property ="twitter:description" content ="Emoji cloud is a vector emoji library and toolkit, designed to make your life easier. "/>
-    <meta property ="twitter:image" content ="https://alohe.github.io/emojicloud/assets/img/social.jpg"/>
-    <link rel="icon" href="assets/img/192.png" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="application-name" content="emojicloud" />
+    <meta name="apple-mobile-web-app-title" content="emojicloud" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="msapplication-navbutton-color" content="#ffffff" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <meta name="msapplication-starturl" content="/" />
+    <link rel="manifest" href="manifest.json" />
+
+    <!-- SEO -->
+    <meta name="twitter:title" content="A gateway to vector emojis " />
+    <meta property="og:type" content="website" />
+    <meta
+      name="description"
+      content="With emoji cloud, you can add vector emojis to your projects with zero configuration and a single line of code"
+    />
+    <meta name="twitter:site" content="@alemlaohe" />
+    <meta
+      name="twitter:description"
+      content="With emoji cloud, you can add vector emojis to your projects with zero configuration and a single line of code"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:image"
+      content="https://alohe.github.io/emojicloud/assets/img/social.jpg"
+    />
+    <meta property="og:title" content="A gateway to vector emojis  " />
+    <meta property="og:image" content="" />
+    <title>A gateway to vector emojis</title>
+    <meta
+      property="og:description"
+      content="With emoji cloud, you can add vector emojis to your projects with zero configuration and a single line of code."
+    />
+    <link rel="shortcut icon" href="assets/img/192.png" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="assets/img/192.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/192.png" />
+    <link rel="apple-touch-icon" sizes="167x167" href="assets/img/192.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/img/192.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/img/192.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/img/192.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/img/192.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/img/192.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/img/192.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/img/192.png" />
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/img/192.png" />
     <title>Emoji cloud</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -37,13 +71,18 @@
     />
     <link rel="stylesheet" href="assets/css/main.css" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5P39DWJTMT"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-5P39DWJTMT"
+    ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-      gtag('config', 'G-5P39DWJTMT');
+      gtag("config", "G-5P39DWJTMT");
     </script>
   </head>
   <body>
@@ -76,9 +115,7 @@
             cloud
             <i class="emoji-high-voltage"></i>
           </h2>
-          <h3 class="mb-5">
-            A gateway to vector emojis 
-          </h3>
+          <h3 class="mb-5">A gateway to vector emojis</h3>
           <p hidden>Add context to your project with fully vector emoji's</p>
 
           <div class="code-container col col-lg-6 col-md-8 mx-auto">
@@ -90,7 +127,9 @@
 
           <div class="col-lg-6 mx-auto">
             <p class="mt-5">
-              Your emoji game is about to get a lot more serious. with emoji cloud, you can add vector emojis to your projects with zero configuration and a single line of code
+              Your emoji game is about to get a lot more serious. with emoji
+              cloud, you can add vector emojis to your projects with zero
+              configuration and a single line of code
             </p>
             <a href="#getStarted">
               <button class="started-btn">Get Started</button>
@@ -253,7 +292,6 @@
         loop: true,
         delay: 75,
       });
-
 
       typewriter
         .typeString("emoji-fire")
